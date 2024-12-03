@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexual Assault Center</title>
+    <link rel="stylesheet" href="Css/Main.css">
+    <link rel="stylesheet" href="Css/Sexual assualt centre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <h1 class="logo">A</h1>
+        <ul>
+            <li><a class="actives" href="index.html">Home</a></li> <!--Use class active for underlines-->
+            <li><a class="Currentpage" href="#mywork">My Work</a></li>
+            <!-- <li><a class="Currentpage" href="Contact.html">About Me</a></li> -->
+        </ul>
+    </nav>
+    <header>
+        <figure class="figure">
+            <img src="Image/Screenshot 2024-11-30 at 12.38.29 AM.png">
+            <div class="black">
+                <p class="p">Sexual Assault Center</p>
+            </div>
+        </figure>
+    </header>
+    <main>
+        <table class="table">
+            <tr class="tr">
+                <td class="th">Sector</td>
+                <td>Non-profit</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Objective</td>
+                <td>To create a tool that has all the necessary information to enable sexual
+                     assault centre staff to easily find help for survivors. </td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Solution</td>
+                <td>We created a database with all of the information the clients required. We presented this database in the form of a map. This way it can be easily obtained.</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Team</td>
+                <td>Angelina Janicas, Namir Khan, Nicolas Choo, Madeleine Leveck, and Haiqa Ahmed.</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">My Role</td>
+                <td>UX researcher and UX designer</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Project Time</td>
+                <td>4 Months</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Project Type</td>
+                <td>School</td>
+            </tr>
+        </table>
+
+        <div class="maincontainer">
+            <h2 class="h2">Process</h2>
+            <div class="divcontainers">
+                <h3 class="h3">Research</h3>
+                <p>After learning what our objective was, our team started to conduct extensive research. 
+                    This included reading multiple books and articles about sexual assault centers, databases, mapping tools, 
+                    and more. We also interviewed multiple staff members about their daily experiences and what their work life was life. 
+                    Each group member also interviewed their own participants this included an Information Technology Director, two User Experience
+                     Designers, and a Delivery Driver. We also researched multiple approaches to ensure the accuracy and currency of maps. Finally, we
+                      learned more about how SACs function, such as the types of computers they operate with and any 
+                    constraints they have. With all of this information gathered we had a strong foundation to start our prototyping.</p>
+            </div>
+            <div class="divcontainers">
+                <h3 class="h3">Challenges and Constraints</h3>
+                <ol>
+                    <li><b>Low Budget:</b> The Sexual Assault Centers is a non-profit organization and so it can be very
+                        difficult to find funding. They have to rely on grants and donations to 
+                        pay their workers. This means that the tool we are creating must have a low cost.</li>
+                    <li><b>Staff has Diverse Tech Proficiency: </b>Many of the SAC staff are volunteers which means there is a variety 
+                        of ages and skill sets. Some staff may not be very technologically literate while others are. 
+                        So our tool must be easy to and user-friendly so that all staff members are able to use it.</li>
+                </ol>
+            </div>
+            <div class="divcontainers">
+            <h3 class="h3">Prototyping</h3>
+                <p>Our first prototype was a rough sketch of our main ideas.
+                     This gave us something to test on users and recive feedback from. We then
+                      proceded to our second prototype. After deciding to use My Maps we designed a tool that 
+                      incorporated all of our research findings and ideas. The main feature was the many layers, which 
+                      consisted of different services including Police stations, Hospitals, Sexual Assault Centres, and more. 
+                      For each service, we listed all the necessary information that the clients required including hours of operation, 
+                      genders, phone number, address, etc. </p>
+                      <br>
+                <div class="prototype"> 
+                <figure class="pfig">
+                    <figcaption>Prototype 1</figcaption>
+                    <img class="pimg" src="Image/p1.jpg">
+                </figure>
+                <figure class="pfig">
+                    <figcaption>Prototype 2</figcaption>
+                    <img class="pimg" src="Image/p2.png">
+                </figure>
+                </div>     
+                <p>We tested our prototype with various ages ranging from 12 - 60 years old, this way we could ensure our tool 
+                    was usable for all ages. We gathered an extensive amount of feedback from our user testing and improved our design further.
+                    This resulted in our final prototype, there are two different 
+                    versions of this map. Both of these have the same information but are presented in slightly different ways.</p>
+            </div>
+            <div class="divcontainers">
+                <h3 class="h3">Final Prototype</h3>
+                                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Image/c1.png" style="width:100%">
+                    <div class="text">Version 1</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Image/c3.png" style="width:100%">
+                    <div class="text">Version 2</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Image/c2.png" style="width:100%">
+                    <div class="text"></div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="divcontainers">
+                <h3 class="h3">Conclusion</h3>
+                <p>Our team successfully completed our final prototype which was accessible, cost-effective, 
+                    and accurate. We believe that by implementing this tool throughout the Sexual Assault Centres, 
+                    the staff will have an easier time navigating and accessing information.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Created by Angelina Janicas
+        <a href="mailto:jani1505@mylaurier.ca" class="btn">jani1505@mylaurier.ca</a>
+        <form target="blank" action="https://www.linkedin.com/in/angelina-janicas-2337132a9/">
+            <input type="image" src="Image/LinkedIn_logo_initials.png" width="50" height="50"> 
+        </form>
+    </footer>
+</body>
+</html>
