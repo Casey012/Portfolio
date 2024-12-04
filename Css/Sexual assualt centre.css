@@ -1,29 +1,15 @@
 header figure img{
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .figure{
-    position: relative;
-}
-
-.black{
-    position: absolute;
-    background-color:rgba(0, 0, 255, 0.233);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.529));
-    top:0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
+    /* position: relative; */
 }
 
 p{
     font-size: 20px;
     line-height: 1.5;
+    color: black;
 }
 
 li{
@@ -31,11 +17,11 @@ li{
     line-height: 1.5;
 }
 .p{
-    color: white;
+    color: black;
     font-size: 600%;
-    padding: 100px;
     width: 80%;
-    text-align: left;
+    text-align: center;
+    margin: auto;
 }
 
 main{
