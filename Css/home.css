@@ -125,7 +125,6 @@ div h3{
 @media (min-width: 475px) {
     .container, .mhome{
       max-width: 475px;
-      border: 2px solid red;
         margin: auto;
     }
   }
