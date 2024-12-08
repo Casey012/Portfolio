@@ -34,7 +34,7 @@ main{
   animation: transitionIn 1s;
 }
 
-nav h1{
+.logo{
   font-size: 100px;
   font-family: italianno;
   display: inline-block;
@@ -43,6 +43,7 @@ nav h1{
   line-height: 80px;
   padding: 0 20px;
   font-weight: bold;
+  color: black;
 }
 
 nav{
