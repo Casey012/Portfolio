@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPVZGMM2NB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPVZGMM2NB');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMP1</title>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Sora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Main.css">
+    <link rel="stylesheet" href="Css/Projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="icon" type="image/png" href="Image/favicon1.png">
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="index.html" class="logo">A</a>
+        <ul>
+            <li><a class="actives" href="index.html">Home</a></li> <!--Use class active for underlines-->
+            <li><a class="Currentpage" href="index.html#mywork">My Work</a></li>
+            <!-- <li><a class="Currentpage" href="Contact.html">About Me</a></li> -->
+        </ul>
+    </nav>
+    <header>
+        <figure class="figure">
+            <img src="Image/GMP1.title.png">
+            <div>
+                <p class="p">GMP1</p>
+            </div>
+        </figure>
+    </header>
+    <main>
+        <table class="table">
+            <tr class="tr">
+                <td class="th">Sector</td>
+                <td>Healthcare</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Objective</td>
+                <td>To help the elderly with medication management.</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Solution</td>
+                <td>We create a device that automatically drops pills.</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Team</td>
+                <td>Angelina Janicas, Kaya Kanashiro, Jasmine Gill, and Khaled Bleibleh.</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">My Role</td>
+                <td>UX designer and team coordinator</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Project Time</td>
+                <td>2 Months</td>
+            </tr>
+            <tr class="tr">
+                <td class="th">Project Type</td>
+                <td>School</td>
+            </tr>
+        </table>
+
+        <div class="maincontainer">
+            <h2 class="h2">Process</h2>
+            <div class="divcontainers">
+                <h3 class="h3">Introduction</h3>
+                <p>For this project, we have chosen to design an accessible pill box that focuses on better medication management for 
+                    users with diverse needs. Our focus is on elderly people who may struggle with memory or motor issues. Our box includes 
+                    features like automatically dropping pills and reminders to encourage people to take their medication. We want to enhance 
+                    users' experience with taking their medication on time with the proper dosage. By implementing these features, it will
+                     result in a more seamless experience for users and ensure that they live a healthier life. In out society were the population has an 
+                     increasing amount of seniors, we must design with the intention to help their quality of life. My team decided to tackle the classic
+                      pill box and make into an automated device. First, we had to understand the challenges that seniors may face.</p>
+            </div>
+            <div class="divcontainers">
+                <h3 class="h3">Challenges and Constraints</h3>
+                <ol>
+                    <li><b>Ensuring accessibility:</b>we must make the device is useable with a variety of disabilities. Including limited vision, 
+                        hearing, motor limitations and more.</li>
+                    <li><b>Technological difficulties:</b>the elderly may not have a good grasp on new technology, and so we had to ensure that our
+                         device was user-friendly and simple to use.</li>
+                    <li><b>Ergonomics: </b>we also had to consider how the device would fit into someone’s home, like the size it should be and decided 
+                        whether it should be portable.</li>
+                </ol>
+                <p>We then came up with this idea. The device would drop pills automatically and would sync to an app where customizations about time are made. 
+                    The pills would be inserted into slots for each day of the week. We also added a reminder system so that the pills wouldn’t be forgotten by
+                     adding a weight sensor to the pill plate that would alert users after some time.</p>
+            </div>
+            <div class="divcontainers">
+            <h3 class="h3">Prototyping</h3>
+                <p>Our first prototype was a rough sketch of ideas. We then moved on to the physical prototype. We made this from cardboard, the main objective was
+                     to figure out the sizing, and how the pills would insert into the device. We created a slider system that where we could manually drop the pills.</p>
+                      <br>
+                <div class="prototype"> 
+                <figure class="pfig">
+                    <figcaption>Prototype 1</figcaption>
+                    <img class="pimg" src="Image/GMP1.1.jpg">
+                </figure>
+                <figure class="pfig">
+                    <figcaption>Prototype 2</figcaption>
+                    <img class="pimg" src="Image/GMP1.jpeg">
+                </figure>
+                </div>
+                <p>After prototyping and gathering feedback, we learned some key points. The first was inserting the pills for each 
+                    day caused an issue. If the user had to take multiple pills throughout the day the device wouldn’t be able to do
+                     that. Instead we changed it that each slot would be a different medication. With weight scales in each slot the
+                     device would drop the right amount of each pills.</p>     
+            </div>
+            <div class="divcontainers">
+                <h3 class="h3">Final Prototype</h3>
+                                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Image/front.jpg" style="width:100%">
+                    <div class="text">Front</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Image/top.jpg" style="width:100%">
+                    <div class="text">Top</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Image/inside.jpg" style="width:100%">
+                    <div class="text">Inside</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="divcontainers">
+                <h3 class="h3">Conclusion</h3>
+                <p>Following this process, we began considering future possibilities for the device. For instance, 
+                    selecting a high-contrast color scheme to ensure readability, making the design aesthetically pleasing
+                     to encourage users to incorporate it into their homes, and integrating features like braille to
+                      enhance accessibility for visually impaired individuals. However, because this was a school assignment,
+                       we lacked the time to conduct thorough research and user testing for our prototype. Ideally, I 
+                       would have liked to perform interviews, usability testing, and A/B testing to refine the design 
+                       and ensure it effectively meets user needs.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Created by Angelina Janicas
+        <a href="mailto:jani1505@mylaurier.ca" class="btn">jani1505@mylaurier.ca</a>
+        <form target="blank" action="https://www.linkedin.com/in/angelina-janicas-2337132a9/">
+            <input type="image" src="Image/LinkedIn_logo_initials.png" width="50" height="50"> 
+        </form>
+    </footer>
+</body>
+</html>
