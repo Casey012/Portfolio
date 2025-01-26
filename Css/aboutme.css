@@ -46,12 +46,12 @@ h2{
 }
 
 .text-content {
-    flex: 1; /* Allow the text to take up remaining space */
-    text-align: left; 
+    flex: 1; /* Let the text take up the remaining space */
+    text-align: left;
     word-wrap: break-word; /* Break long words if necessary */
-    overflow-wrap: anywhere; /* Break overflowing text */
+    overflow-wrap: anywhere; /* Ensure text wraps properly */
     margin: 0; 
-    width: 100%; /* Ensure it stretches fully */
+    width: 100%; /* Allow full width for the text container */
 }
 
 .text-content {
@@ -161,7 +161,7 @@ p{
     }
   
     h2 {
-      font-size: 24px; /* Reduce font size */
+      font-size: 22px; /* Reduce font size */
     }
   
     p {
