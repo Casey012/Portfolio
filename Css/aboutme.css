@@ -46,6 +46,15 @@ h2{
 }
 
 .text-content {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: left; 
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: anywhere; /* Break overflowing text */
+    margin: 0; 
+    width: 100%; /* Ensure it stretches fully */
+}
+
+.text-content {
     flex: 1; /* Let the text take up the remaining space */
 }
 
@@ -145,8 +154,10 @@ p{
     }
   
     .text-content {
-        text-align: left; /* Keep the text left-aligned */
         width: 100%; /* Stretch the text content to full width */
+        text-align: center; /* Optionally, center-align text */
+        font-size: 18px; /* Slightly reduce font size for smaller screens */
+        padding: 10px; /* Add padding to avoid clipping */
     }
   
     h2 {
