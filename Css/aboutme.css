@@ -52,10 +52,7 @@ h2{
     overflow-wrap: anywhere; /* Ensure text wraps properly */
     margin: 0; 
     width: 100%; /* Allow full width for the text container */
-}
-
-.text-content {
-    flex: 1; /* Let the text take up the remaining space */
+    border: solid 2px pink;
 }
 
 .text-content h2 {
@@ -139,6 +136,21 @@ p{
     font-size: 20px;
 }
 
+@media (max-width: 400px){
+    .typing{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 300px){
+    .typing{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
 /* Small screens (phones, max width 640px) */
 @media (max-width: 640px) {
     .mhome {
@@ -153,11 +165,12 @@ p{
         margin: 0 auto 10px auto; /* Center the image horizontally */
     }
   
-    .text-content {
+    .text-content{
         width: 100%; /* Stretch the text content to full width */
         text-align: center; /* Optionally, center-align text */
         font-size: 18px; /* Slightly reduce font size for smaller screens */
         padding: 10px; /* Add padding to avoid clipping */
+        text-wrap: wrap;
     }
   
     h2 {
