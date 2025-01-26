@@ -55,6 +55,10 @@ h2{
     border: solid 2px pink;
 }
 
+.typing{
+    text-align: left;
+}
+
 .text-content h2 {
     margin: 0 0 10px; /* Space between the title and paragraph */
 }
@@ -139,14 +143,12 @@ p{
 @media (max-width: 400px){
     .typing{
         font-size: 20px;
-        text-align: center;
     }
 }
 
 @media (max-width: 300px){
     .typing{
         font-size: 15px;
-        text-align: center;
     }
 }
 
@@ -167,7 +169,7 @@ p{
   
     .text-content{
         width: 100%; /* Stretch the text content to full width */
-        text-align: center; /* Optionally, center-align text */
+        text-align: left; /* Optionally, center-align text */
         font-size: 18px; /* Slightly reduce font size for smaller screens */
         padding: 10px; /* Add padding to avoid clipping */
         text-wrap: wrap;
