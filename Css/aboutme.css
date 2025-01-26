@@ -52,6 +52,7 @@ h2{
     overflow-wrap: anywhere; /* Ensure text wraps properly */
     margin: 0; 
     width: 100%; /* Allow full width for the text container */
+    overflow: visible;
     border: solid 2px rgb(207, 255, 192);
 }
 
