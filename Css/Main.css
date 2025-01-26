@@ -10,6 +10,17 @@ html{
 .btn{
   text-decoration: none;
   color: inherit;
+  font-size: 20px;
+}
+
+#aj{
+  font-size: 20px;
+}
+
+.btn:hover{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 * {
@@ -19,7 +30,24 @@ html{
   box-sizing: border-box;
 }
 
-@keyframes transitionIn{
+/* animation */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.1s steps(20, end);
+  }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* @keyframes transitionIn{
   from{
     opacity: 0;
     transform: translate(-10px,-10px);
@@ -32,7 +60,7 @@ html{
 
 main{
   animation: transitionIn 1s;
-}
+} */
 
 .logo{
   font-size: 100px;
