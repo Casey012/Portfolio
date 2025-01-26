@@ -14,10 +14,6 @@ hr{
     margin:auto;
 }
 
-.btn:hover{
-    background-color: yellow;
-}
-
 .headshot{
     width: 30%;
     padding: 20px;
@@ -89,6 +85,7 @@ main div div h3{
     padding: 10px;
     font-size: 20px;
     color: white;
+    margin-top: 20px;
 }
 
 .bcontainer{
