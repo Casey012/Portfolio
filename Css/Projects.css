@@ -149,6 +149,10 @@ figcaption{
     display: none;
 }
 
+.prev, .next{
+  background-color: #f2f2f2c4;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
