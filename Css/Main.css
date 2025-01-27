@@ -33,9 +33,11 @@ html{
 /* animation */
 .typing {
   display: inline-block;
+  overflow: hidden;
   white-space: nowrap;
   animation: typing 1.1s steps(20, end);
-  }
+  width: fit-content; /* Dynamically adjust to the content */
+}
 
 @keyframes typing {
   from {
