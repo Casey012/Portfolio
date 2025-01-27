@@ -153,9 +153,12 @@ div h3{
   
   /* sm */
   @media (min-width: 640px) {
-    .container, .mhome{ 
-      max-width: 640px;
-    }
+    .mhome, .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
   }
   
   /* md */
