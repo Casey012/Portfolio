@@ -53,7 +53,6 @@ h2{
     margin: 0; 
     width: 100%; /* Allow full width for the text container */
     overflow: visible;
-    border: solid 2px rgb(207, 255, 192);
 }
 
 .typing{
@@ -141,23 +140,12 @@ p{
     font-size: 20px;
 }
 
-@media (max-width: 400px){
-    .typing{
-        font-size: 20px;
-        padding-right: 30px;
-    }
-}
-
-@media (max-width: 300px){
-    .typing{
-        font-size: 15px;
-        padding-right: 30px;
-    }
-}
-
 
 /* Small screens (phones, max width 640px) */
 @media (max-width: 640px) {
+    .typing {
+        animation: none; /* Disable the typing animation */
+    }
     .mhome {
         flex-direction: column; /* Stack items vertically */
         align-items: flex-start; /* Align items to the left */
