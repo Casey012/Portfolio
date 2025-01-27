@@ -64,15 +64,10 @@ main{
 } */
 
 .logo{
-  font-size: 100px;
-  font-family: italianno;
   display: inline-block;
-  margin-top: 15px;
-  font-size: 100px;
+  margin-top: 10px;
   line-height: 80px;
   padding: 0 20px;
-  font-weight: bold;
-  color: black;
 }
 
 nav{
